@@ -3,6 +3,7 @@
 
 # Virtual environment:
 .venv
+myvenv
 __pycache__
 
 # Secret keys, passwords, and local settings:
