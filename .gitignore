@@ -3,7 +3,11 @@
 
 # Virtual environment:
 .venv
+myvenv
 __pycache__
+
+# Server batch file:
+run.bat
 
 # Secret keys, passwords, and local settings:
 local_*.py
