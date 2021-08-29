@@ -1,0 +1,9 @@
+# PyCharm settings:
+.idea
+
+# Virtual environment:
+.venv
+__pycache__
+
+# Secret keys, passwords, and local settings:
+local_*.py
