@@ -3,3 +3,7 @@
 
 # Virtual environment:
 .venv
+__pycache__
+
+# Secret keys and passwords:
+*/local_settings.py
