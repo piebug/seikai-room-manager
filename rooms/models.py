@@ -5,4 +5,4 @@ from django.db import models
 class Room(models.Model):
     name = models.CharField(max_length=50)
     contents = models.TextField()
-    maxCapacity = models.PositiveIntegerField(validators=[MinValueValidator(1), MaxValueValidator(350)])
+    capacity = models.PositiveIntegerField(validators=[MinValueValidator(1), MaxValueValidator(350)])
