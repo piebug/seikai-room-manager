@@ -2,7 +2,7 @@
 
 This project is a room scheduler for the Seisho Kaichi high school in Tottori, Japan. It will allow teachers and 
 students to reserve rooms for meetings and events while preventing double-bookings and misuse of space. It is also an
-excellent practice project!
+excellent practice project 🐱‍👓
 
 ## Getting started
 
