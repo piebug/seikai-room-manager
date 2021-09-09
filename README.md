@@ -47,7 +47,7 @@ installation. You might need to log in using the username and password you chose
 
    - Once you are in the Postgres console, first create a user to be the database owner:
 
-       ```sql
+       ```psql
        CREATE USER superseikai WITH PASSWORD '<db_password>';
        ```
    
@@ -61,7 +61,7 @@ any password of your choosing if you're just trying to run it locally. Whichever
      
    - Finally, create the database with the above user set as an owner:
         
-        ```sql
+        ```psql
         CREATE DATABASE seikairooms OWNER superseikai;
         ```
 
