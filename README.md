@@ -6,25 +6,37 @@ excellent practice project 🐱‍👓
 
 ## Getting started
 
-`seikai-room-manager` is a django/python web app with a PSQL database. To run this on your machine, you must 
+`seikai-room-manager` is a Django/Python web app with a PSQL database. To run this on your machine, you must 
 install:
 
 - Python 3.9.4
   - (optional) I recommend using a version manager such as `pyenv` or `asdf`
 - PSQL 13.4
 
-Django 3.2 and other python dependencies will be installed using `pip`, which is a tool that comes included with python.
-You will install them as part of the project setup.
+Django 3.2 and other Python dependencies will be installed using `pip`, which is a command-line tool that comes included 
+with Python. You will install them as part of the project setup.
 
 ### Setup
 
 1. Clone the project onto your machine using `git clone <repo-url>` and change into the project directory.
 
+    ```shell
+    git clone https://github.com/pies-n-loaf/seikai-room-manager.git
+    cd seikai-room-manager
+    ```
+
 2. Create a virtual environment and activate it.
-   - `python -m venv <name_of_venv>`
+   
+    ```shell
+    python -m venv .venv
+    source .venv/Scripts/activate
+    ```
 
 3. Install the requirements.
-   - `pip install -r requirements.txt`
+
+    ```shell
+    pip install -r requirements.txt
+    ```
 
 4. Separately, create a database.
    - `CREATE USER <user_from_settings> WITH PASSWORD '<db_password>';` > will return `CREATE ROLE` as a success message
@@ -32,12 +44,22 @@ You will install them as part of the project setup.
    - `CREATE DATABASE <db_name>;`
 
 5. Migrate the database.
-   - `python manage.py migrate`
 
-6. Run the server.
-   - `python manage.py runserver`
-   - If you want to create a superuser to log into the admin interface: 
-   `python manage.py createsuperuser --username <name>`
+    ```shell
+    python manage.py migrate
+    ```
+
+6. Run the server and navigate to http://127.0.0.1:8000/ to interact with the app.
+
+    ```shell
+    python manage.py runserver
+    ```
+   
+    You may also create a superuser to log into the admin interface: 
+
+    ```shell
+    python manage.py createsuperuser --username <your-admin-user>
+    ```
 
 ## Functional requirements
 
