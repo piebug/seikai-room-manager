@@ -41,10 +41,29 @@ install:
     pip install -r requirements.txt
     ```
 
-4. Separately, create a database.
-   - `CREATE USER <user_from_settings> WITH PASSWORD '<db_password>';` > will return `CREATE ROLE` as a success message
-     - `ALTER ROLE WITH PASSWORD` if the user was created without a password first
-   - `CREATE DATABASE <db_name>;`
+4. Separately, create a database. To do this, you will need to open the Postgres console using either the `psql` command 
+in your terminal, if you have added it to the path, or by pulling up the SQL shell that was bundled with your PostgreSQL 
+installation. You might need to log in using the username and password you chose during setup.
+
+   - Once you are in the Postgres console, first create a user to be the database owner:
+
+       ```sql
+       CREATE USER superseikai WITH PASSWORD '<db_password>';
+       ```
+   
+       `<db_password>` is the password of our database. You can get this by being Justin or Sandy. Or you can set it to 
+any password of your choosing if you're just trying to run it locally. Whichever case you go with, make sure to create a 
+`local_settings.py` file in the `seikairooms/` directory with the constant: 
+   
+        ```python
+        DB_PASSWORD = '<db_password>'
+        ```
+     
+   - Finally, create the database with the above user set as an owner:
+        
+        ```sql
+        CREATE DATABASE seikairooms OWNER superseikai;
+        ```
 
 5. Migrate the database.
 
@@ -61,7 +80,7 @@ install:
     You may also create a superuser to log into the admin interface: 
 
     ```shell
-    python manage.py createsuperuser --username <your-admin-user>
+    python manage.py createsuperuser --username <your_admin_user>
     ```
 
 ## Functional requirements
