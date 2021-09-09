@@ -65,7 +65,7 @@ any password of your choosing if you're just trying to run it locally. Whichever
         CREATE DATABASE seikairooms OWNER superseikai;
         ```
 
-5. Migrate the database.
+5. Back in your project directory, migrate the database. You may need to reactivate your virtual environment first.
 
     ```shell
     python manage.py migrate
@@ -94,8 +94,7 @@ any password of your choosing if you're just trying to run it locally. Whichever
 - All users should be able to:
 
   - Browse the reservable rooms in the school and their capacities.
-  - Click on a room to see its features/contents and the schedule for when it is booked/available. Teachers and admins 
-  should be able to see who booked a room.
+  - Click on a room to see its features/contents and the schedule for when it is booked/available.
   - Reserve a room at a time when it is available. Reservations are always approved unless changed by an admin.
 
 - Teachers should also be able to:
