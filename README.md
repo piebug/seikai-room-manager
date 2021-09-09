@@ -9,12 +9,15 @@ excellent practice project 🐱‍👓
 `seikai-room-manager` is a Django/Python web app with a PSQL database. To run this on your machine, you must 
 install:
 
-- Python 3.9.4
-  - (optional) I recommend using a version manager such as `pyenv` or `asdf`
-- PSQL 13.4
+- [Python 3.9.4](https://www.python.org/downloads/release/python-394/)
+  - _Optional, but recommended:_ Use a Python version manager such as `pyenv` or `asdf` for the installation.
+    - [Instructions for `pyenv`](https://realpython.com/intro-to-pyenv/) and [`pyenv-win` documentation](https://github.com/pyenv-win/pyenv-win)
+    - [`asdf` documentation](http://asdf-vm.com/guide/getting-started.html)
+- [PSQL 13.4](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+  - [Installation instructions for Windows](https://www.postgresqltutorial.com/install-postgresql/)
 
-Django 3.2 and other Python dependencies will be installed using `pip`, which is a command-line tool that comes included 
-with Python. You will install them as part of the project setup.
+[Django 3.2](https://docs.djangoproject.com/en/3.2/releases/3.2/) and other Python dependencies will be installed using 
+`pip`, which is a command-line tool that comes included with Python. You will install them as part of the project setup.
 
 ### Setup
 
@@ -64,26 +67,31 @@ with Python. You will install them as part of the project setup.
 ## Functional requirements
 
 - Students and teachers need to be able to make a user account and set a password.
+
   - Accounts can only be made with emails that end with `@seitokaichi`.
   - A confirmation email will be sent on account creation and users must verify their account to log in.
   - Teachers will be manually confirmed and given special permissions.
 
 - All users should be able to:
+
   - Browse the reservable rooms in the school and their capacities.
   - Click on a room to see its features/contents and the schedule for when it is booked/available. Teachers and admins 
   should be able to see who booked a room.
   - Reserve a room at a time when it is available. Reservations are always approved unless changed by an admin.
 
 - Teachers should also be able to:
+
   - See who booked a specific room at a given point in time. 
   - Make recurring reservations that can span the entire semester.
   - See a list of conflicts for a recurring event, including who scheduled the conflicting event.
 
 - Admins should also be able to:
+
   - Manage user accounts using the django admin interface.
   - Resolve scheduling conflicts and cancel events.
 
 - The system will email users when:
+
   - A user creates an account and needs to confirm it.
   - An event has a conflict due to a teacher or admin scheduling a recurring event over that time.
   - An admin has modified or cancelled another user's event.
