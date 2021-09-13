@@ -10,7 +10,7 @@ class RoomsList(ListView):
     template_name = 'rooms/rooms_list.html'
 
 
-class RoomDetail(DetailView):
+class RoomDetails(DetailView):
     """"""
     model = Room
     template_name = 'rooms/room_details.html'
