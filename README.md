@@ -87,7 +87,7 @@ any password of your choosing if you're just trying to run it locally. Whichever
 
 - Students and teachers need to be able to make a user account and set a password.
 
-  - Accounts can only be made with emails that end with `@seitokaichi`.
+  - Accounts can only be made with emails that end with `@seishokaichi`.
   - A confirmation email will be sent on account creation and users must verify their account to log in.
   - Teachers will be manually confirmed and given special permissions.
 
