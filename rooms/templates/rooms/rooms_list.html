@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang-"en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rooms</title>
+</head>
+
+<body>
+
+<h1>Rooms List</h1>
+
+<ul>
+    {% for room in object_list %}
+        <li> {{room}}</li>
+    {% empty %}
+        <li>No rooms found.</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
