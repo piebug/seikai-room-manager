@@ -11,6 +11,6 @@ class RoomsList(ListView):
 
 
 class RoomDetails(DetailView):
-    """"""
+    """Renders a page dedicated to a single room that can be reserved by students and staff"""
     model = Room
     template_name = 'rooms/room_details.html'
