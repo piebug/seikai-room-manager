@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rooms.apps.RoomsConfig',
+    'reservations.apps.ReservationsConfig',
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
