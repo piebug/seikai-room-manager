@@ -1,6 +1,7 @@
-from rooms.models import Room
-from django.db import models
 from django.conf import settings
+from django.db import models
+
+from rooms.models import Room
 
 
 class Reservation(models.Model):

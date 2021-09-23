@@ -1,7 +1,7 @@
 from django.urls import path
 
-from .views import RoomsList, RoomDetails
 from .apps import RoomsConfig
+from .views import RoomsList, RoomDetails
 
 app_name = RoomsConfig.name
 urlpatterns = [
