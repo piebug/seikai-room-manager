@@ -1,23 +1,15 @@
-<!DOCTYPE html>
+{% extends 'rooms/base.html' %}
 
-<html lang-"en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Rooms</title>
-</head>
-
-<body>
+{% block content %}
 
 <h1>Rooms List</h1>
 
 <ul>
-    {% for room in object_list %}
-        <li><a href="{% url 'rooms:room_details' room.pk %}">{{room}}</a></li>
-    {% empty %}
-        <li>No rooms found.</li>
-    {% endfor %}
+  {% for room in object_list %}
+    <li><a href="{% url 'rooms:room_details' room.pk %}">{{ room }}</a></li>
+  {% empty %}
+    <li>No rooms found.</li>
+  {% endfor %}
 </ul>
 
-</body>
-</html>
+{% endblock content %}
