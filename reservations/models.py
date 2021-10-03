@@ -12,4 +12,4 @@ class Reservation(models.Model):
     purpose = models.TextField()
 
     def __str__(self):
-        return self.room.name
+        return f"{self.user}'s reservation in {self.room}"
