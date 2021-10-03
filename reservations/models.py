@@ -10,3 +10,6 @@ class Reservation(models.Model):
     end_time = models.DateTimeField()
     other_occupants = models.TextField()
     purpose = models.TextField()
+
+    def __str__(self):
+        return self.room.name
