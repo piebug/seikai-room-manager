@@ -21,7 +21,8 @@ install:
 
 We also use [Sass](https://sass-lang.com/) and [Bootstrap 5](https://getbootstrap.com/) for our styling on the frontend. 
 These tools can be installed using the [`yarn` package manager](https://classic.yarnpkg.com/en/), but this is an 
-optional dependency for all backend development.
+optional dependency for all backend development. Go to the [Sass development](#sass-development) section if you'd like 
+to set it up.
 
 ### Setup
 
@@ -91,11 +92,13 @@ any password of your choosing if you're just trying to run it locally. Whichever
 
 1. If you want to work on frontend styling, you will need to install those dependencies. 
 Run `yarn install` or `npm install` to do so.
+    - [`yarn` installation](https://classic.yarnpkg.com/en/docs/install)
+    - [Node.js and `npm` installation](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
-2. Activate your virtual environment (`source .venv/Scripts/activate`) and install the Python requirements 
+3. Activate your virtual environment (`source .venv/Scripts/activate`) and install the Python requirements 
 (`pip install -r requirements.txt`).
 
-3. While writing your new Sass styles, run `python manage.py sass <app_dir>/static/<app_name>/scss/ <app_dir>/static/<app_name>/css --watch`
+4. While writing your new Sass styles, run `python manage.py sass <app_dir>/static/<app_name>/scss/ <app_dir>/static/<app_name>/css --watch`
 to actively compile the `.scss` files into `.css`. Run this command without the `--watch` flag to compile on demand. 
 
 ## Functional requirements
