@@ -1,20 +1,12 @@
-<!DOCTYPE html>
+{% extends 'rooms/base.html' %}
 
-<html lang-"en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>{{room}} Details</title>
-</head>
-
-<body>
+{% block content %}
 
 <h1>Got some room details for ya!</h1>
 
 <ul>
-    <li>{{room.contents}}</li>
-    <li>{{room.capacity}}</li>
+  <li>{{ room.contents }}</li>
+  <li>{{ room.capacity }}</li>
 </ul>
 
-</body>
-</html>
+{% endblock content %}

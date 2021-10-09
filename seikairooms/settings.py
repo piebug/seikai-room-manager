@@ -112,4 +112,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 if USE_LOCAL_SETTINGS:
     from .local_settings import *
 
+    INSTALLED_APPS.append('django_sass')
     DATABASES['default']['PASSWORD'] = DB_PASSWORD
