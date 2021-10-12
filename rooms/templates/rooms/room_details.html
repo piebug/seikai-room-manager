@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+{% extends 'rooms/base.html' %}
 
-<html lang="en">
+{% block content %}
 
 <head>
     <meta charset="UTF-8">
@@ -8,14 +8,12 @@
 </head>
 
 <body>
-<h1>{{room}} Details</h1>
-<h2>Got some room details for ya!</h2>
+
+<h1>Got some room details for ya!</h1>
 
 <ul>
-    <li>{{room.contents}}</li>
-    <li>{{room.capacity}}</li>
+  <li>{{ room.contents }}</li>
+  <li>{{ room.capacity }}</li>
 </ul>
 
-<h3><a href="{% url 'reservations:reservation_list' room.pk %}">click here to see reservations associated with this room</a></li></h3>
-</body>
-</html>
+{% endblock content %}
