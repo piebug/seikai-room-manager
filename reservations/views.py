@@ -5,7 +5,7 @@ from .models import Reservation
 
 
 class ReservationList(ListView):
-    """Lists all the reservations associated with a room or a user"""
+    """Lists all the reservations"""
     model = Reservation
     template_name = 'reservations/reservation_list.html'
 
