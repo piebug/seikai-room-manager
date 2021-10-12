@@ -6,6 +6,9 @@
 myvenv
 __pycache__
 
+# Build files:
+node_modules
+
 # Server batch file:
 run.bat
 

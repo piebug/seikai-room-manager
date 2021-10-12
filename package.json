@@ -1,0 +1,10 @@
+{
+  "name": "seikai-room-manager",
+  "version": "1.0.0",
+  "repository": "https://github.com/pies-n-loaf/seikai-room-manager.git",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3",
+    "sass": "^1.42.1"
+  }
+}
