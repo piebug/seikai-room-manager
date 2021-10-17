@@ -1,0 +1,15 @@
+{% extends 'rooms/base.html' %}
+
+{% block content %}
+
+<h1>Reservation List</h1>
+
+<ul>
+    {% for reservation in object_list %}
+        <li><a href="{% url 'reservations:reservation_details' reservation.pk %}">{{reservation}}</a></li>
+    {% empty %}
+        <li>No reservations found.</li>
+    {% endfor %}
+</ul>
+
+{% endblock content %}

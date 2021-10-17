@@ -1,0 +1,13 @@
+{% extends 'rooms/base.html' %}
+
+{% block content %}
+
+<h1>Got some reservation details for ya!</h1>
+
+<ul>
+    <li>{{reservation.room}}</li>
+    <li>{{reservation.start_time}}</li>
+    <li>{{reservation.end_time}}</li>
+</ul>
+
+{% endblock content %}
